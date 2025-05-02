@@ -21,14 +21,12 @@ def main():
 
     print(f"Usando lr={lr} y epochs={epochs}\n")
 
-    # Crear y entrenar la red
     net = XORNetwork(lr=lr, epochs=epochs)
     X = [[0, 0], [0, 1], [1, 0], [1, 1]]
     y = [0, 1, 1, 0]
     net.train(X, y)
     print(f"Red XOR entrenada con lr={lr} y epochs={epochs}.\n")
 
-    # Bucle interactivo de predicciones
     while True:
         entrada = input("Ingresa dos bits (0/1) separados por coma (ej: 1,0) o 'salir': ")
         if entrada.strip().lower() in ('salir', 'exit', 'q'):
