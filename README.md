@@ -10,7 +10,7 @@ Este proyecto implementa compuertas lógicas utilizando **perceptrones** y **red
 - **xor_network.py:**  
   Define una red neuronal simple para resolver la compuerta XOR. Se utiliza una capa oculta con dos neuronas y una capa de salida, junto con funciones para el feedforward, el entrenamiento y la predicción.
 
-- **logic_gate_handler.py:**  
+- **LogicGateIdentifier.py:**  
   Gestiona los distintos modelos (perceptrones para AND y OR, y la red neuronal para XOR). Se encarga de entrenar todos los modelos y permite obtener predicciones y detalles técnicos (pesos y logs de entrenamiento).
 
 - **main.py:**  
